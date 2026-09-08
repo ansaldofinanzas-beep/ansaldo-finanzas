@@ -1,0 +1,9 @@
+{
+  "name": "ansaldo-finanzas",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sitio web profesional y API Serverless para Cristian Ansaldo (CFO Externo)",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4"
+  }
+}

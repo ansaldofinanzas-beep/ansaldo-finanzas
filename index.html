@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cristian Ansaldo | Consultoría Financiera & CFO Externo para PyMEs</title>
+  <meta name="description" content="Dirección financiera ejecutiva (CFO Externo), modelización de costos de importación, análisis de márgenes reales y estructuración de financiamiento bursátil para PyMEs e importadoras." />
+  <meta name="keywords" content="CFO Externo, Consultoría Financiera PyME, eCheqs bursátiles, costeo de importaciones, idóneo CNV, finanzas corporativas argentina, Cristian Ansaldo" />
+
+  <!-- Open Graph / Redes Sociales & WhatsApp -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Cristian Ansaldo | Consultoría Financiera & CFO Externo" />
+  <meta property="og:description" content="Maximizá la rentabilidad de tu empresa, optimizá costos de importación y accedé al financiamiento más conveniente del mercado de capitales." />
+  <meta property="og:locale" content="es_AR" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0B192C',
+              navyLight: '#1E3E62',
+              emerald: '#059669',
+              emeraldLight: '#10B981',
+              emeraldBg: '#ECFDF5',
+              slate: '#334155',
+              light: '#F8FAFC'
+            }
+          },
+          fontFamily: {
+            heading: ['"Plus Jakarta Sans"', 'sans-serif'],
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-[#F8FAFC] text-slate-700 antialiased selection:bg-emerald-500 selection:text-white">
+
+  <!-- Top Bar Contacto Rápido -->
+  <div class="bg-brand-navy text-slate-300 text-xs py-2 border-b border-slate-800">
+    <div class="container-custom flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-4">
+        <span class="inline-flex items-center gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          Consultoría Financiera Corporativa & CFO Externo
+        </span>
+        <span class="hidden md:inline text-slate-500">|</span>
+        <span class="hidden md:inline">Lic. Mercado de Capitales (USAL) · IAEF / CEFA · Idóneo CNV</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="https://www.linkedin.com/in/cristian-ansaldo-480957344" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition-colors inline-flex items-center gap-1">
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64a1.65 1.65 0 0 0-1.66 1.66 1.66 1.66 0 0 0 1.66 1.66 1.66 1.66 0 0 0 1.65-1.66 1.65 1.65 0 0 0-1.65-1.66Z"/></svg>
+          LinkedIn
+        </a>
+        <a href="mailto:ansaldo.finanzas@gmail.com" class="hover:text-emerald-400 transition-colors inline-flex items-center gap-1">
+          <svg class="w-3.5 h-3.5 fill-none stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          ansaldo.finanzas@gmail.com
+        </a>
+        <a href="https://wa.me/5491157720869?text=Hola%20Cristian,%20quisiera%20consultar%20por%20tus%20servicios%20de%20CFO%20Externo%20y%20asesor%C3%ADa%20financiera." target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition-colors inline-flex items-center gap-1">
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.28-2.42 5.83a8.17 8.17 0 0 1-5.82 2.41c-1.47 0-2.91-.39-4.17-1.14l-.3-.18-3.12.82.83-3.04-.2-.31a8.21 8.21 0 0 1-1.26-4.39c0-4.54 3.7-8.24 8.24-8.24m4.54 11.66c-.25.7-.99 1.29-1.74 1.45-.51.11-1.18.2-3.41-.73-2.85-1.18-4.69-4.08-4.83-4.27-.14-.19-1.16-1.54-1.16-2.93 0-1.39.73-2.08 1-2.36.26-.28.58-.35.77-.35.19 0 .39 0 .56.01.18.01.42-.07.66.5.25.59.85 2.08.93 2.23.08.16.13.34.03.54-.1.2-.15.33-.3.51-.15.18-.32.4-.46.54-.15.15-.31.32-.13.62.18.3 1.05 1.73 2.25 2.8 1.54 1.37 2.85 1.79 3.25 1.99.41.2.65.17.89-.11.24-.28 1.03-1.2 1.3-1.62.28-.41.55-.35.93-.2.38.15 2.42 1.14 2.83 1.35.41.2.69.3.79.47.1.18.1.99-.15 1.69Z"/></svg>
+          WhatsApp Directo
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Principal -->
+  <header id="mainHeader" class="sticky top-0 z-50 header-glass">
+    <div class="container-custom py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#inicio" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-brand-navy flex items-center justify-center text-white font-heading font-extrabold text-lg shadow-sm border border-slate-700 group-hover:bg-brand-navyLight transition-colors">
+          <span class="text-emerald-400">C</span>A
+        </div>
+        <div class="leading-tight">
+          <div class="font-heading font-extrabold text-slate-900 text-lg tracking-tight">CRISTIAN ANSALDO</div>
+          <div class="text-[0.725rem] font-semibold tracking-wider uppercase text-emerald-700">Finanzas Corporativas & CFO Externo</div>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex items-center gap-7 text-[0.925rem] font-medium text-slate-600">
+        <a href="#inicio" class="hover:text-brand-navy transition-colors">Inicio</a>
+        <a href="#dolores" class="hover:text-brand-navy transition-colors">¿Te pasa esto?</a>
+        <a href="#diferencial" class="hover:text-brand-navy transition-colors">CFO vs Contador</a>
+        <a href="#servicios" class="hover:text-brand-navy transition-colors">Servicios</a>
+        <a href="#simulador" class="hover:text-brand-navy transition-colors text-emerald-700 font-semibold flex items-center gap-1">
+          <span class="inline-block w-2 h-2 rounded-full bg-emerald-500"></span>
+          Simulador PyME
+        </a>
+        <a href="#metodologia" class="hover:text-brand-navy transition-colors">Metodología</a>
+        <a href="#sobre-mi" class="hover:text-brand-navy transition-colors">Trayectoria</a>
+        <a href="#faq" class="hover:text-brand-navy transition-colors">FAQ</a>
+      </nav>
+
+      <!-- CTA Header -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="#contacto" class="inline-flex items-center justify-center px-5 py-2.5 rounded-lg bg-brand-navy hover:bg-brand-navyLight text-white text-sm font-semibold shadow-sm transition-all duration-200 transform hover:-translate-y-0.5">
+          Agendar Diagnóstico
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobileMenuBtn" aria-label="Abrir Menú" class="lg:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100 transition-colors">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu Dropdown -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-4 shadow-lg animate-fadeIn">
+      <div class="flex flex-col gap-3 text-base font-medium text-slate-700">
+        <a href="#inicio" class="py-2 border-b border-slate-100">Inicio</a>
+        <a href="#dolores" class="py-2 border-b border-slate-100">¿Te pasa esto?</a>
+        <a href="#diferencial" class="py-2 border-b border-slate-100">CFO vs Contador</a>
+        <a href="#servicios" class="py-2 border-b border-slate-100">Servicios Clave</a>
+        <a href="#simulador" class="py-2 border-b border-slate-100 text-emerald-700 font-semibold">Simulador de Financiamiento</a>
+        <a href="#metodologia" class="py-2 border-b border-slate-100">Metodología de Trabajo</a>
+        <a href="#sobre-mi" class="py-2 border-b border-slate-100">Sobre Cristian Ansaldo</a>
+        <a href="#faq" class="py-2 border-b border-slate-100">Preguntas Frecuentes</a>
+        <a href="#contacto" class="mt-2 text-center py-3 rounded-lg bg-brand-navy text-white font-semibold">Agendar Diagnóstico Gratuito</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="hero-gradient pt-16 pb-20 md:pt-24 md:pb-28 border-b border-slate-200">
+    <div class="container-custom">
+      <div class="max-w-4xl mx-auto text-center">
+        
+        <!-- Badges de Idoneidad y Credenciales -->
+        <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8">
+          <span class="badge-credential">
+            <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            Idóneo Comisión Nacional de Valores (CNV)
+          </span>
+          <span class="badge-credential">
+            <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+            Lic. en Mercado de Capitales (USAL)
+          </span>
+          <span class="badge-credential">
+            <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            Posgrado IAEF · Certificación CEFA
+          </span>
+        </div>
+
+        <!-- Titular Principal -->
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15] mb-6">
+          Crecé con previsibilidad, maximizá tu <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-500">rentabilidad real</span> y optimizá tu financiamiento.
+        </h1>
+
+        <!-- Subtítulo -->
+        <p class="text-lg sm:text-xl text-slate-600 mb-10 max-w-3xl mx-auto leading-relaxed font-normal">
+          Dirección financiera estratégica bajo la modalidad de <strong>CFO Externo</strong>, modelización precisa de costos de importación y estructuración de pasivos bursátiles (eCheqs, pagarés y cauciones) para PyMEs que exigen control total de su balance.
+        </p>
+
+        <!-- Botones de Acción -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
+          <a href="#contacto" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-navy hover:bg-brand-navyLight text-white font-heading font-bold text-base shadow-lg hover:shadow-xl transition-all duration-200 transform hover:-translate-y-0.5 text-center flex items-center justify-center gap-2">
+            <span>Agendar Diagnóstico Gratuito</span>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+          <a href="#simulador" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white hover:bg-slate-50 text-slate-800 font-heading font-semibold text-base border border-slate-300 shadow-sm transition-all duration-200 text-center flex items-center justify-center gap-2">
+            <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+            <span>Simular Ahorro en Financiamiento</span>
+          </a>
+        </div>
+
+        <!-- Indicadores de Solidez -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 pt-8 border-t border-slate-200 text-left">
+          <div class="p-3">
+            <div class="font-heading font-extrabold text-2xl sm:text-3xl text-brand-navy">18+ Años</div>
+            <div class="text-xs sm:text-sm text-slate-500 font-medium">De trayectoria en el sector financiero e institucional</div>
+          </div>
+          <div class="p-3">
+            <div class="font-heading font-extrabold text-2xl sm:text-3xl text-emerald-600">12 Años</div>
+            <div class="text-xs sm:text-sm text-slate-500 font-medium">Subjefe de Mesa de Títulos & gestión de carteras</div>
+          </div>
+          <div class="p-3">
+            <div class="font-heading font-extrabold text-2xl sm:text-3xl text-brand-navy">Márgenes</div>
+            <div class="text-xs sm:text-sm text-slate-500 font-medium">Modelos analíticos a medida de costeo e importaciones</div>
+          </div>
+          <div class="p-3">
+            <div class="font-heading font-extrabold text-2xl sm:text-3xl text-emerald-600">Menor CFT</div>
+            <div class="text-xs sm:text-sm text-slate-500 font-medium">Optimización vía eCheqs, pagarés y cauciones bursátiles</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: ¿Te sentís identificado? (Dolores del Empresario PyME) -->
+  <section id="dolores" class="py-20 bg-white border-b border-slate-200">
+    <div class="container-custom">
+      <div class="max-w-3xl mx-auto text-center mb-16">
+        <span class="text-emerald-700 font-semibold tracking-wider uppercase text-xs">Puntos de fricción recurrentes</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 mb-4">
+          Si te pasa algo de esto, somos los indicados para acompañarte:
+        </h2>
+        <p class="text-slate-600 text-base sm:text-lg">
+          Dirigir una empresa en Argentina exige más que intuición operativa. Identificamos y corregimos las fugas invisibles que frenan tu rentabilidad:
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Dolor 1 -->
+        <div class="card-problem">
+          <div class="w-10 h-10 rounded-lg bg-red-50 text-red-600 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6"/></svg>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-slate-900 mb-2">
+            “Vendemos cada vez más volumen, pero al cierre de mes no vemos la ganancia.”
+          </h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Falta de determinación del costo integral por línea de negocio, desfasajes en el mark-up real y sangría por impacto tributario imprevisto (IIBB, tasas municipales, IVA e impuesto a las ganancias).
+          </p>
+        </div>
+
+        <!-- Dolor 2 -->
+        <div class="card-problem">
+          <div class="w-10 h-10 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-slate-900 mb-2">
+            “Los costos de importación y logística se volvieron impredecibles.”
+          </h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Inexistencia de cotizadores dinámicos que incorporen con precisión el Valor FOB, fletes internacionales, aranceles aduaneros, costos portuarios, logística local y contingencias extraordinarias.
+          </p>
+        </div>
+
+        <!-- Dolor 3 -->
+        <div class="card-problem">
+          <div class="w-10 h-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-slate-900 mb-2">
+            “El financiamiento bancario tradicional nos asfixia con altas tasas.”
+          </h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Depender de giros en descubierto o préstamos bancarios estándares eleva el Costo Financiero Total (CFT), desaprovechando las ventajas sustanciales de eCheqs y pagarés bursátiles con aval de SGRs.
+          </p>
+        </div>
+
+        <!-- Dolor 4 -->
+        <div class="card-problem">
+          <div class="w-10 h-10 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-slate-900 mb-2">
+            “La liquidez y los saldos de tesorería quedan ociosos perdiendo valor.”
+          </h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            El dinero de la operatoria diaria en cuentas bancarias no remuneradas sufre una erosión constante por falta de colocación ágil en instrumentos de renta fija, cauciones o fondos de liquidez inmediata.
+          </p>
+        </div>
+
+        <!-- Dolor 5 -->
+        <div class="card-problem">
+          <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-slate-900 mb-2">
+            “No tengo un tablero confiable de Cash Flow para anticipar decisiones.”
+          </h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Se trabaja apagando incendios diarios, sin un calce riguroso de plazos y monedas entre lo que se cobra y lo que se debe pagar a proveedores nacionales o del exterior.
+          </p>
+        </div>
+
+        <!-- Dolor 6 -->
+        <div class="card-problem">
+          <div class="w-10 h-10 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-slate-900 mb-2">
+            “Toda la carga financiera recae sobre el dueño y faltan horas en el día.”
+          </h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            El socio o director general no puede concentrarse en vender o liderar el negocio comercial porque consume su energía negociando con bancos o calculando números en planillas dispersas.
+          </p>
+        </div>
+      </div>
+
+      <!-- Call to Action sutil en dolores -->
+      <div class="mt-12 text-center">
+        <a href="#contacto" class="inline-flex items-center gap-2 text-brand-navy font-semibold hover:text-emerald-600 transition-colors text-base group">
+          <span>Hablemos para evaluar tu situación en una charla de diagnóstico sin cargo</span>
+          <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Diferencia entre Estudio Contable y CFO Externo -->
+  <section id="diferencial" class="py-20 bg-slate-50 border-b border-slate-200">
+    <div class="container-custom">
+      <div class="max-w-3xl mx-auto text-center mb-16">
+        <span class="text-emerald-700 font-semibold tracking-wider uppercase text-xs">Claridad de roles</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 mb-4">
+          ¿En qué se diferencia un CFO Externo de tu Contador tradicional?
+        </h2>
+        <p class="text-slate-600 text-base sm:text-lg">
+          Ambos roles son vitales y se complementan a la perfección. Tu contador registra lo que ya sucedió; el CFO diseña el futuro financiero de tu empresa.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <!-- Estudio Contable -->
+        <div class="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center text-slate-600 font-bold">
+              EC
+            </div>
+            <div>
+              <h3 class="font-heading font-bold text-xl text-slate-800">Estudio Contable Tradicional</h3>
+              <p class="text-xs text-slate-500 font-medium">Cumplimiento impositivo y fiscal (Mirada retrospectiva)</p>
+            </div>
+          </div>
+          <ul class="space-y-4 text-sm text-slate-600">
+            <li class="flex items-start gap-3">
+              <span class="text-slate-400 font-bold">✕</span>
+              <span>Registra asientos contables sobre hechos ya ocurridos el mes o año anterior.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-slate-400 font-bold">✕</span>
+              <span>Enfocado principalmente en la liquidación de impuestos y cumplimiento ante AFIP / ARCA.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-slate-400 font-bold">✕</span>
+              <span>No negocia líneas de crédito bancarias ni estructura tasas en el mercado de capitales.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-slate-400 font-bold">✕</span>
+              <span>No diseña matrices de cotización para importaciones ni evalúa mark-up por producto.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- CFO Externo -->
+        <div class="bg-gradient-to-br from-brand-navy to-slate-900 border-2 border-emerald-500/50 rounded-2xl p-8 text-white shadow-xl relative overflow-hidden">
+          <div class="absolute top-4 right-4 bg-emerald-500/20 text-emerald-300 text-xs px-3 py-1 rounded-full font-semibold border border-emerald-500/30">
+            Enfoque Estratégico
+          </div>
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 rounded-lg bg-emerald-500 flex items-center justify-center text-white font-bold">
+              CFO
+            </div>
+            <div>
+              <h3 class="font-heading font-bold text-xl text-white">CFO Externo (Cristian Ansaldo)</h3>
+              <p class="text-xs text-emerald-300 font-medium">Dirección Financiera Estratégica (Mirada prospectiva)</p>
+            </div>
+          </div>
+          <ul class="space-y-4 text-sm text-slate-200">
+            <li class="flex items-start gap-3">
+              <span class="text-emerald-400 font-bold">✓</span>
+              <span><strong>Proyecta el Cash Flow futuro:</strong> Asegura liquidez y calce de cobros y compromisos en tiempo real.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-emerald-400 font-bold">✓</span>
+              <span><strong>Estructura financiamiento inteligente:</strong> Reduce el CFT descontando eCheqs y pagarés en el mercado bursátil.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-emerald-400 font-bold">✓</span>
+              <span><strong>Modelización analítica:</strong> Diseña matrices de costeo FOB, aranceles, logística y fijación de precios con rentabilidad real.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-emerald-400 font-bold">✓</span>
+              <span><strong>Rentabiliza la tesorería:</strong> Coloca saldos ociosos de caja para generar ingresos financieros diarios.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Servicios Principales -->
+  <section id="servicios" class="py-24 bg-white border-b border-slate-200">
+    <div class="container-custom">
+      <div class="max-w-3xl mx-auto text-center mb-20">
+        <span class="text-emerald-700 font-semibold tracking-wider uppercase text-xs">Propuesta de Valor Integral</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 mt-2 mb-4">
+          Servicios de Consultoría Financiera & CFO Externo
+        </h2>
+        <p class="text-slate-600 text-base sm:text-lg">
+          Soluciones a medida para PyMEs, importadores y agentes de mercado que demandan rigor técnico, cumplimiento normativo y resultados medibles.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Servicio 1 -->
+        <div class="card-service">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-slate-900 text-emerald-400 flex items-center justify-center mb-6 font-bold">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-slate-900 mb-3">
+              Dirección Financiera & CFO Externo
+            </h3>
+            <p class="text-sm text-slate-600 mb-6 leading-relaxed">
+              Acompañamiento directivo continuo para los socios o gerentes generales. Diseño y seguimiento de tableros de control de tesorería, presupuesto anual y proyecciones de Cash Flow para una toma de decisiones sin incertidumbre.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-2 mb-6">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>Reuniones directivas periódicas de seguimiento</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>Control del capital de trabajo y calce de liquidez</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>Optimización del balance y estructura de deuda</li>
+            </ul>
+          </div>
+          <a href="#contacto" class="text-xs font-bold text-brand-navy hover:text-emerald-600 flex items-center gap-1 uppercase tracking-wider">
+            Consultar servicio &rarr;
+          </a>
+        </div>
+
+        <!-- Servicio 2 -->
+        <div class="card-service">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-slate-900 text-emerald-400 flex items-center justify-center mb-6 font-bold">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-slate-900 mb-3">
+              Modelización Económica & Costeo al Detalle
+            </h3>
+            <p class="text-sm text-slate-600 mb-6 leading-relaxed">
+              Desarrollo e implementación de cotizadores dinámicos y matrices analíticas de costeo integral. Específicamente adaptados para empresas importadoras y productivas que deben mapear la cadena completa de valor.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-2 mb-6">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>Costeo de importación (FOB, aranceles, fletes)</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>Costos de estructura fija y operativa (sueldos, alquileres)</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>Simuladores de precios ante variaciones de tipo de cambio</li>
+            </ul>
+          </div>
+          <a href="#contacto" class="text-xs font-bold text-brand-navy hover:text-emerald-600 flex items-center gap-1 uppercase tracking-wider">
+            Consultar servicio &rarr;
+          </a>
+        </div>
+
+        <!-- Servicio 3 -->
+        <div class="card-service">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-slate-900 text-emerald-400 flex items-center justify-center mb-6 font-bold">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"/></svg>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-slate-900 mb-3">
+              Análisis de Margen & Rentabilidad Real
+            </h3>
+            <p class="text-sm text-slate-600 mb-6 leading-relaxed">
+              Determinación rigurosa del costo unitario y punto de equilibrio por línea comercial para proyectar indicadores clave: Rentabilidad Directa, Mark-up objetivo y Ganancia Neta real libre de sorpresas tributarias.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-2 mb-6">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>Cálculo exacto del impacto de IIBB y Tasa de Higiene</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>Depuración de líneas deficitarias o con margen ficticio</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>Estrategias comerciales basadas en rentabilidad neta</li>
+            </ul>
+          </div>
+          <a href="#contacto" class="text-xs font-bold text-brand-navy hover:text-emerald-600 flex items-center gap-1 uppercase tracking-wider">
+            Consultar servicio &rarr;
+          </a>
+        </div>
+
+        <!-- Servicio 4 -->
+        <div class="card-service">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-slate-900 text-emerald-400 flex items-center justify-center mb-6 font-bold">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-slate-900 mb-3">
+              Financiamiento Bursátil & Pasivos (CFT)
+            </h3>
+            <p class="text-sm text-slate-600 mb-6 leading-relaxed">
+              Optimización del Costo Financiero Total (CFT) migrando pasivos bancarios caros a herramientas bursátiles de financiamiento PyME. Estructuración con avales de SGRs para obtener las tasas más bajas del mercado.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-2 mb-6">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>Descuento de eCheqs propios y de terceros</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>Pagarés bursátiles avalados en pesos y en dólares</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>Cauciones tomadoras y calce estratégico de plazos</li>
+            </ul>
+          </div>
+          <a href="#contacto" class="text-xs font-bold text-brand-navy hover:text-emerald-600 flex items-center gap-1 uppercase tracking-wider">
+            Consultar servicio &rarr;
+          </a>
+        </div>
+
+        <!-- Servicio 5 -->
+        <div class="card-service">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-slate-900 text-emerald-400 flex items-center justify-center mb-6 font-bold">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-slate-900 mb-3">
+              Gestión de Excedentes & Tesorería Activa
+            </h3>
+            <p class="text-sm text-slate-600 mb-6 leading-relaxed">
+              Estrategias para que la liquidez transaccional y los saldos ociosos de tesorería generen rendimientos diarios sin comprometer los compromisos de pago operativos de corto y mediano plazo.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-2 mb-6">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>Colocación de cauciones bursátiles de 1 a 7 días</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>Fondos Comunes de Inversión (T+0 y T+1)</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>Instrumentos de renta fija CER / Letras del Tesoro</li>
+            </ul>
+          </div>
+          <a href="#contacto" class="text-xs font-bold text-brand-navy hover:text-emerald-600 flex items-center gap-1 uppercase tracking-wider">
+            Consultar servicio &rarr;
+          </a>
+        </div>
+
+        <!-- Servicio 6 -->
+        <div class="card-service">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-slate-900 text-emerald-400 flex items-center justify-center mb-6 font-bold">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-slate-900 mb-3">
+              Coberturas Cambiarias & Wealth Management
+            </h3>
+            <p class="text-sm text-slate-600 mb-6 leading-relaxed">
+              Formulación de carteras de cobertura cambiaria y protección patrimonial adaptadas estrictamente al mandato de riesgo de la empresa, bajo riguroso cumplimiento de la normativa de la Comisión Nacional de Valores (CNV).
+            </p>
+            <ul class="text-xs text-slate-500 space-y-2 mb-6">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>Futuros de dólar (Matba Rofex) y Dólar Linked</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>Obligaciones Negociables (ONs) corporativas en USD</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>Ejecuciones institucionales eficientes en el mercado</li>
+            </ul>
+          </div>
+          <a href="#contacto" class="text-xs font-bold text-brand-navy hover:text-emerald-600 flex items-center gap-1 uppercase tracking-wider">
+            Consultar servicio &rarr;
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Simulador Interactivo de Financiamiento PyME -->
+  <section id="simulador" class="py-24 bg-slate-900 text-white relative overflow-hidden">
+    <!-- Glow decorativo -->
+    <div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-emerald-500/10 blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-blue-500/10 blur-3xl pointer-events-none"></div>
+
+    <div class="container-custom relative z-10">
+      <div class="max-w-3xl mx-auto text-center mb-16">
+        <span class="inline-block px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 font-semibold text-xs tracking-wider uppercase mb-3 border border-emerald-500/30">
+          Herramienta Interactiva
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1 mb-4 font-heading">
+          Simulá cuánto puede ahorrar tu PyME en Financiamiento
+        </h2>
+        <p class="text-slate-300 text-base sm:text-lg">
+          Compará el costo de descontar tus cheques en el banco tradicional versus la tasa preferencial obtenida en el mercado bursátil con avales de SGR:
+        </p>
+      </div>
+
+      <!-- Simulador Card -->
+      <div class="max-w-4xl mx-auto bg-slate-800/80 border border-slate-700 rounded-3xl p-6 sm:p-10 shadow-2xl backdrop-blur-sm">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Controles del Simulador -->
+          <div class="lg:col-span-7 space-y-6">
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <label for="amountSlider" class="text-sm font-semibold text-slate-200">Monto mensual a descontar:</label>
+                <span id="amountDisplay" class="font-heading font-extrabold text-xl text-emerald-400">$ 25.000.000</span>
+              </div>
+              <input type="range" id="amountSlider" min="2000000" max="150000000" step="1000000" value="25000000" class="w-full cursor-pointer" />
+              <div class="flex justify-between text-xs text-slate-400 mt-1">
+                <span>$ 2 Millones</span>
+                <span>$ 75 M</span>
+                <span>$ 150 Millones</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div>
+                <label for="termSelect" class="block text-xs font-semibold text-slate-300 mb-1.5">Plazo Promedio:</label>
+                <select id="termSelect" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-sm text-white focus:outline-none focus:border-emerald-500">
+                  <option value="30">30 días</option>
+                  <option value="60" selected>60 días</option>
+                  <option value="90">90 días</option>
+                  <option value="120">120 días</option>
+                </select>
+              </div>
+              <div>
+                <label for="bankRateInput" class="block text-xs font-semibold text-slate-300 mb-1.5">TNA Banco Tradicional (%):</label>
+                <input type="number" id="bankRateInput" value="65" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-sm text-white focus:outline-none focus:border-emerald-500" />
+              </div>
+              <div>
+                <label for="mktRateInput" class="block text-xs font-semibold text-slate-300 mb-1.5">TNA Bursátil SGR (%):</label>
+                <input type="number" id="mktRateInput" value="44" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-sm text-emerald-400 font-bold focus:outline-none focus:border-emerald-500" />
+              </div>
+            </div>
+
+            <p class="text-xs text-slate-400 italic">
+              *Tasas nominales anuales orientativas sujetas a las condiciones y plazos del mercado de capitales (MAV / BYMA).
+            </p>
+          </div>
+
+          <!-- Resultados del Simulador -->
+          <div class="lg:col-span-5 bg-gradient-to-b from-slate-900 to-brand-navy border border-emerald-500/30 rounded-2xl p-6 text-center">
+            <div class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">Ahorro Mensual Estimado</div>
+            <div id="monthlySavings" class="font-heading font-extrabold text-3xl sm:text-4xl text-emerald-400 mb-4">
+              $ 431.507
+            </div>
+
+            <div class="pt-4 border-t border-slate-800 mb-6">
+              <div class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">Ahorro Anual Proyectado</div>
+              <div id="annualSavings" class="font-heading font-extrabold text-2xl sm:text-3xl text-white">
+                $ 5.178.082
+              </div>
+              <div id="percentSavings" class="inline-block mt-2 px-2.5 py-0.5 rounded-md bg-emerald-500/20 text-emerald-300 text-xs font-semibold">
+                32% menor CFT
+              </div>
+            </div>
+
+            <a id="simulatorCtaBtn" href="https://wa.me/5491157720869" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-heading font-bold text-sm shadow-md transition-all">
+              <span>Estructurar este ahorro en mi PyME</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Metodología de Trabajo (Inspirada en Quirós & Asociados) -->
+  <section id="metodologia" class="py-24 bg-white border-b border-slate-200">
+    <div class="container-custom">
+      <div class="max-w-3xl mx-auto text-center mb-20">
+        <span class="text-emerald-700 font-semibold tracking-wider uppercase text-xs">Paso a paso ordenado</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 mt-2 mb-4">
+          Nuestra Metodología de Trabajo
+        </h2>
+        <p class="text-slate-600 text-base sm:text-lg">
+          Un proceso ágil, pragmático y sin disrupciones en la operatoria habitual de tu equipo de trabajo.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Paso 1 -->
+        <div class="relative bg-slate-50 border border-slate-200 rounded-2xl p-7 flex flex-col justify-between">
+          <div>
+            <div class="step-number mb-6">01</div>
+            <h3 class="font-heading font-bold text-xl text-slate-900 mb-3">Relevamiento Inicial</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Breve reunión ejecutiva (30 minutos, virtual o presencial) para comprender la estructura de tu empresa, rubro, modelo de ventas, canales de financiamiento y principales desafíos de rentabilidad.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-200 text-xs font-semibold text-emerald-700">
+            Sin costo ni compromiso
+          </div>
+        </div>
+
+        <!-- Paso 2 -->
+        <div class="relative bg-slate-50 border border-slate-200 rounded-2xl p-7 flex flex-col justify-between">
+          <div>
+            <div class="step-number mb-6">02</div>
+            <h3 class="font-heading font-bold text-xl text-slate-900 mb-3">Diagnóstico Práctico</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Radiografía profunda de costos fijos/variables, márgenes reales por producto, costos de importación y el Costo Financiero Total (CFT) que estás pagando actualmente en bancos.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-200 text-xs font-semibold text-brand-navy">
+            Detección de fugas de caja
+          </div>
+        </div>
+
+        <!-- Paso 3 -->
+        <div class="relative bg-slate-50 border border-slate-200 rounded-2xl p-7 flex flex-col justify-between">
+          <div>
+            <div class="step-number mb-6">03</div>
+            <h3 class="font-heading font-bold text-xl text-slate-900 mb-3">Plan de Acción a Medida</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Diseño de las matrices de costeo, implementación de cotizadores dinámicos y estructuración de líneas en el mercado de capitales (eCheqs, avales SGR y colocaciones de excedentes).
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-200 text-xs font-semibold text-emerald-700">
+            Soluciones aplicadas a medida
+          </div>
+        </div>
+
+        <!-- Paso 4 -->
+        <div class="relative bg-slate-50 border border-slate-200 rounded-2xl p-7 flex flex-col justify-between">
+          <div>
+            <div class="step-number mb-6">04</div>
+            <h3 class="font-heading font-bold text-xl text-slate-900 mb-3">Seguimiento & Tablero</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Bajo la modalidad de CFO Externo, acompañamos al directorio en reuniones periódicas monitoreando el Cash Flow, calces de plazos y optimización continua de márgenes.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-200 text-xs font-semibold text-brand-navy">
+            Control directivo sostenible
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Sobre Cristian Ansaldo -->
+  <section id="sobre-mi" class="py-24 bg-slate-50 border-b border-slate-200">
+    <div class="container-custom">
+      <div class="max-w-5xl mx-auto bg-white border border-slate-200 rounded-3xl p-8 sm:p-14 shadow-md">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <!-- Avatar / Card Ejecutiva -->
+          <div class="lg:col-span-5 text-center">
+            <div class="w-44 h-44 sm:w-52 sm:h-52 mx-auto rounded-3xl bg-gradient-to-br from-brand-navy to-slate-800 p-2 shadow-xl mb-6 relative">
+              <div class="w-full h-full rounded-2xl bg-slate-900 flex flex-col items-center justify-center text-white border border-slate-700">
+                <span class="font-heading font-extrabold text-5xl sm:text-6xl text-emerald-400">CA</span>
+                <span class="text-xs uppercase tracking-widest text-slate-400 mt-2">CFO Externo</span>
+              </div>
+              <div class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 px-4 py-1 rounded-full bg-emerald-600 text-white text-[0.7rem] font-bold uppercase tracking-wider shadow-md whitespace-nowrap">
+                Idóneo CNV Oficial
+              </div>
+            </div>
+
+            <h3 class="font-heading font-bold text-2xl text-slate-900">Cristian Ansaldo</h3>
+            <p class="text-sm font-semibold text-emerald-700 mb-4">Consultor Financiero & CFO Externo</p>
+
+            <a href="https://www.linkedin.com/in/cristian-ansaldo-480957344" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold transition-colors">
+              <svg class="w-4 h-4 fill-current text-[#0077b5]" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64a1.65 1.65 0 0 0-1.66 1.66 1.66 1.66 0 0 0 1.66 1.66 1.66 1.66 0 0 0 1.65-1.66 1.65 1.65 0 0 0-1.65-1.66Z"/></svg>
+              <span>Ver Perfil en LinkedIn</span>
+            </a>
+          </div>
+
+          <!-- Trayectoria & Acreditaciones -->
+          <div class="lg:col-span-7 space-y-5">
+            <span class="text-emerald-700 font-semibold tracking-wider uppercase text-xs">Perfil Profesional</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-heading">
+              18 años de experiencia financiera volcados a la economía real
+            </h2>
+
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              Soy <strong>Licenciado en Mercado de Capitales</strong> por la <strong>Universidad del Salvador (USAL)</strong> y cuento con un posgrado en Finanzas en el <strong>Instituto Argentino de Ejecutivos de Finanzas (IAEF)</strong> bajo la certificación internacional <strong>Certified European Financial Analyst (CEFA)</strong>, respaldado por la acreditación de idoneidad ante la <strong>Comisión Nacional de Valores (CNV)</strong>.
+            </p>
+
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              A lo largo de más de 18 años de trayectoria en el sector financiero corporativo e institucional, me desempeñé durante <strong>12 años en la gestión de portafolios de inversión, asesoramiento patrimonial y como Subjefe de Mesa de Títulos</strong>, liderando la operativa y administración de carteras institucionales, públicas y corporativas.
+            </p>
+
+            <div class="pt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-semibold text-slate-700">
+              <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 flex items-center gap-2.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                Especialista en estructuración de eCheqs y SGR
+              </div>
+              <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 flex items-center gap-2.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                Modelos de costeo para importadoras
+              </div>
+              <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 flex items-center gap-2.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                Gestión de tesorería y saldos de liquidez
+              </div>
+              <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 flex items-center gap-2.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                Coberturas cambiarias y futuros Rofex
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Preguntas Frecuentes (FAQ) -->
+  <section id="faq" class="py-24 bg-white border-b border-slate-200">
+    <div class="container-custom max-w-4xl mx-auto">
+      <div class="text-center mb-16">
+        <span class="text-emerald-700 font-semibold tracking-wider uppercase text-xs">Dudas comunes</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 mb-4 font-heading">
+          Preguntas Frecuentes
+        </h2>
+        <p class="text-slate-600 text-base sm:text-lg">
+          Respuestas claras sobre la modalidad de contratación y el alcance de los servicios.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <span>¿Qué tamaño de empresa debe tener mi negocio para contratar un CFO Externo?</span>
+            <svg class="faq-icon w-5 h-5 text-slate-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </div>
+          <div class="faq-content">
+            El servicio está diseñado para PyMEs en etapa de crecimiento, importadoras y empresas consolidadas que facturan a partir de montos donde una fuga de rentabilidad o una ineficiencia en el financiamiento bancario cuesta millones de pesos. Permite contar con la experiencia y jerarquía de un director financiero sénior sin incurrir en la carga fija de un sueldo gerencial de tiempo completo.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <span>¿Reemplaza el CFO Externo a mi contador o estudio contable actual?</span>
+            <svg class="faq-icon w-5 h-5 text-slate-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </div>
+          <div class="faq-content">
+            No, de hecho se potencian mutuamente. Tu contador seguirá liquidando impuestos, sueldos y confeccionando los balances ante ARCA/AFIP. El CFO Externo utiliza esa información para planificar el Cash Flow futuro, negociar tasas de descuento bursátiles, modelar cotizadores de venta y maximizar la rentabilidad operativa del negocio.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <span>¿Cómo se estructuran los honorarios del servicio?</span>
+            <svg class="faq-icon w-5 h-5 text-slate-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </div>
+          <div class="faq-content">
+            Trabajamos con total transparencia mediante dos esquemas: un abono mensual fijo (retainer) para la dirección financiera continuada y acompañamiento como CFO Externo, o bien por proyectos puntuales (armado de matrices de costeo, estructuración de legajos en SGRs o diagnóstico inicial). En la mayoría de los casos, los ahorros en CFT y la recuperación de márgenes cubren con creces los honorarios desde los primeros meses.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <span>¿Es necesario cambiar de banco o de software de gestión?</span>
+            <svg class="faq-icon w-5 h-5 text-slate-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </div>
+          <div class="faq-content">
+            Absolutamente no. Nos integramos con tu banco actual y abrimos cuentas comitentes en Agentes de Liquidación y Compensación (ALyCs) de primera línea autorizados por la CNV para acceder a las herramientas bursátiles (eCheqs, cauciones). Nos adaptamos a los sistemas de gestión (ERP o Excel) que tu equipo ya utiliza habitualmente.
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <span>¿Cómo es el primer paso para comenzar a trabajar?</span>
+            <svg class="faq-icon w-5 h-5 text-slate-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </div>
+          <div class="faq-content">
+            El proceso inicia con una llamada de relevamiento de 30 minutos sin cargo. Evaluamos juntos la situación de tu empresa, detectamos las áreas prioritarias de intervención y te presentamos una propuesta concreta de diagnóstico y plan de acción.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Contacto & Formulario de Agendamiento -->
+  <section id="contacto" class="py-24 bg-slate-900 text-white relative">
+    <div class="container-custom">
+      <div class="max-w-5xl mx-auto">
+        
+        <div class="text-center mb-16">
+          <span class="text-emerald-400 font-semibold tracking-wider uppercase text-xs">Contacto Directo</span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mt-2 mb-4 font-heading">
+            Hablemos sobre los números de tu empresa
+          </h2>
+          <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto">
+            Completá el formulario o escribinos directamente por WhatsApp para coordinar una reunión de relevamiento sin costo ni compromiso.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+          
+          <!-- Información y Canales -->
+          <div class="lg:col-span-5 space-y-8 bg-slate-800/60 border border-slate-700 rounded-3xl p-8">
+            <div>
+              <h3 class="font-heading font-bold text-xl text-white mb-2">Canales de Atención</h3>
+              <p class="text-sm text-slate-400">
+                Atención ejecutiva y personalizada para directores y dueños de empresas de todo el país.
+              </p>
+            </div>
+
+            <div class="space-y-4 text-sm">
+              <a href="https://wa.me/5491157720869?text=Hola%20Cristian,%20quisiera%20coordinar%20una%20reuni%C3%B3n%20de%20diagn%C3%B3stico%20para%20mi%20empresa." target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/80 border border-slate-700/80 hover:border-emerald-500/50 transition-colors group">
+                <div class="w-10 h-10 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold">
+                  <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.28-2.42 5.83a8.17 8.17 0 0 1-5.82 2.41c-1.47 0-2.91-.39-4.17-1.14l-.3-.18-3.12.82.83-3.04-.2-.31a8.21 8.21 0 0 1-1.26-4.39c0-4.54 3.7-8.24 8.24-8.24m4.54 11.66c-.25.7-.99 1.29-1.74 1.45-.51.11-1.18.2-3.41-.73-2.85-1.18-4.69-4.08-4.83-4.27-.14-.19-1.16-1.54-1.16-2.93 0-1.39.73-2.08 1-2.36.26-.28.58-.35.77-.35.19 0 .39 0 .56.01.18.01.42-.07.66.5.25.59.85 2.08.93 2.23.08.16.13.34.03.54-.1.2-.15.33-.3.51-.15.18-.32.4-.46.54-.15.15-.31.32-.13.62.18.3 1.05 1.73 2.25 2.8 1.54 1.37 2.85 1.79 3.25 1.99.41.2.65.17.89-.11.24-.28 1.03-1.2 1.3-1.62.28-.41.55-.35.93-.2.38.15 2.42 1.14 2.83 1.35.41.2.69.3.79.47.1.18.1.99-.15 1.69Z"/></svg>
+                </div>
+                <div>
+                  <div class="text-xs text-slate-400">WhatsApp Directo</div>
+                  <div class="font-semibold text-white group-hover:text-emerald-400 transition-colors">+54 9 11 5772-0869</div>
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/cristian-ansaldo-480957344" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/80 border border-slate-700/80 hover:border-emerald-500/50 transition-colors group">
+                <div class="w-10 h-10 rounded-lg bg-blue-500/20 text-blue-400 flex items-center justify-center font-bold">
+                  <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64a1.65 1.65 0 0 0-1.66 1.66 1.66 1.66 0 0 0 1.66 1.66 1.66 1.66 0 0 0 1.65-1.66 1.65 1.65 0 0 0-1.65-1.66Z"/></svg>
+                </div>
+                <div>
+                  <div class="text-xs text-slate-400">Red Profesional</div>
+                  <div class="font-semibold text-white group-hover:text-emerald-400 transition-colors">Perfil Verificado en LinkedIn</div>
+                </div>
+              </a>
+
+              <a href="mailto:ansaldo.finanzas@gmail.com" class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/80 border border-slate-700/80 hover:border-emerald-500/50 transition-colors group">
+                <div class="w-10 h-10 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                </div>
+                <div>
+                  <div class="text-xs text-slate-400">Correo Electrónico</div>
+                  <div class="font-semibold text-white group-hover:text-emerald-400 transition-colors">ansaldo.finanzas@gmail.com</div>
+                </div>
+              </a>
+
+              <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-700/80">
+                <div class="text-xs text-slate-400 mb-1">Ubicación y Alcance</div>
+                <div class="font-semibold text-white">Buenos Aires, Argentina</div>
+                <div class="text-xs text-slate-400 mt-1">Modalidad Presencial y Remoto para todo el país</div>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-slate-700 text-xs text-slate-400">
+              🔒 <strong>Garantía de Confidencialidad:</strong> Toda la información contable y financiera compartida se trata bajo estricto acuerdo de confidencialidad comercial (NDA).
+            </div>
+          </div>
+
+          <!-- Formulario de Agendamiento -->
+          <div class="lg:col-span-7 bg-slate-800/90 border border-slate-700 rounded-3xl p-8 sm:p-10 shadow-xl">
+            <h3 class="font-heading font-bold text-2xl text-white mb-6">Solicitar Diagnóstico Financiero</h3>
+            
+            <form id="contactForm" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="formName" class="block text-xs font-semibold text-slate-300 mb-1">Nombre y Apellido *</label>
+                  <input type="text" id="formName" required placeholder="Ej: Roberto Gómez" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500" />
+                </div>
+                <div>
+                  <label for="formCompany" class="block text-xs font-semibold text-slate-300 mb-1">Empresa y Rubro *</label>
+                  <input type="text" id="formCompany" required placeholder="Ej: Distribuidora / Importadora" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500" />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="formPhone" class="block text-xs font-semibold text-slate-300 mb-1">Teléfono / WhatsApp *</label>
+                  <input type="tel" id="formPhone" required placeholder="Ej: +54 9 11 1234-5678" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500" />
+                </div>
+                <div>
+                  <label for="formEmail" class="block text-xs font-semibold text-slate-300 mb-1">Correo Electrónico *</label>
+                  <input type="email" id="formEmail" required placeholder="roberto@miempresa.com" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500" />
+                </div>
+              </div>
+
+              <div>
+                <label for="formTopic" class="block text-xs font-semibold text-slate-300 mb-1">Principal Desafío o Necesidad *</label>
+                <select id="formTopic" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-emerald-500">
+                  <option value="CFO Externo & Dirección General">Dirección Financiera / CFO Externo Continuo</option>
+                  <option value="Modelización de Costos de Importación">Modelización de Costos de Importación (FOB/aranceles)</option>
+                  <option value="Financiamiento Bursátil (eCheqs / SGR)">Optimización de Financiamiento (eCheqs / Pagarés / SGR)</option>
+                  <option value="Análisis de Margen y Rentabilidad Real">Análisis de Márgenes Reales y Fugas de Rentabilidad</option>
+                  <option value="Gestión de Excedentes de Caja">Colocación de Excedentes y Tesorería Activa</option>
+                  <option value="Otro motivo">Otro desafío financiero puntual</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="formMessage" class="block text-xs font-semibold text-slate-300 mb-1">Comentario breve sobre tu empresa</label>
+                <textarea id="formMessage" rows="3" placeholder="Contanos brevemente qué situación te gustaría resolver..." class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500"></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-4 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-heading font-extrabold text-base shadow-lg transition-all duration-200 transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+                <span>Enviar Consulta por WhatsApp</span>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </button>
+
+              <div id="formSuccess" class="hidden p-4 rounded-xl bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-center text-sm font-medium">
+                ✓ ¡Muchas gracias! Se abrirá WhatsApp para que envíes tu consulta directamente con los datos ingresados.
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-brand-navy border-t border-slate-800 text-slate-400 py-12 text-xs">
+    <div class="container-custom">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6 pb-8 border-b border-slate-800">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-lg bg-slate-800 flex items-center justify-center text-white font-heading font-bold">
+            <span class="text-emerald-400">C</span>A
+          </div>
+          <div>
+            <div class="font-heading font-bold text-white text-base">CRISTIAN ANSALDO</div>
+            <div class="text-[0.7rem] uppercase tracking-wider text-emerald-400">Finanzas Corporativas & CFO Externo</div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-6 font-medium text-slate-300">
+          <a href="#inicio" class="hover:text-emerald-400 transition-colors">Inicio</a>
+          <a href="#dolores" class="hover:text-emerald-400 transition-colors">Puntos de Dolor</a>
+          <a href="#servicios" class="hover:text-emerald-400 transition-colors">Servicios</a>
+          <a href="#simulador" class="hover:text-emerald-400 transition-colors">Simulador</a>
+          <a href="#metodologia" class="hover:text-emerald-400 transition-colors">Metodología</a>
+          <a href="#sobre-mi" class="hover:text-emerald-400 transition-colors">Sobre Cristian</a>
+          <a href="#faq" class="hover:text-emerald-400 transition-colors">Preguntas Frecuentes</a>
+          <a href="#contacto" class="hover:text-emerald-400 transition-colors">Contacto</a>
+        </div>
+
+        <div>
+          <a href="https://www.linkedin.com/in/cristian-ansaldo-480957344" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors inline-flex items-center gap-1.5 font-semibold text-slate-300">
+            <svg class="w-4 h-4 fill-current text-[#0077b5]" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64a1.65 1.65 0 0 0-1.66 1.66 1.66 1.66 0 0 0 1.66 1.66 1.66 1.66 0 0 0 1.65-1.66 1.65 1.65 0 0 0-1.65-1.66Z"/></svg>
+            Conectar en LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500">
+        <p>© 2026 Cristian Ansaldo. Todos los derechos reservados. Consultoría Financiera & Dirección Estratégica.</p>
+        <p class="text-center md:text-right max-w-lg">
+          La información y herramientas brindadas tienen carácter consultivo y orientativo, sujetas a la normativa vigente de la Comisión Nacional de Valores (CNV) de la República Argentina.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón Flotante de WhatsApp -->
+  <div class="floating-whatsapp">
+    <div class="whatsapp-tooltip">
+      <span>¿Hablamos sobre tu empresa?</span>
+    </div>
+    <a href="https://wa.me/5491157720869?text=Hola%20Cristian,%20vi%20tu%20sitio%20web%20y%20quisiera%20coordinar%20una%20reuni%C3%B3n%20de%20diagn%C3%B3stico%20financiero%20para%20mi%20empresa." target="_blank" rel="noopener noreferrer" class="whatsapp-btn" aria-label="Contactar por WhatsApp">
+      <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.28-2.42 5.83a8.17 8.17 0 0 1-5.82 2.41c-1.47 0-2.91-.39-4.17-1.14l-.3-.18-3.12.82.83-3.04-.2-.31a8.21 8.21 0 0 1-1.26-4.39c0-4.54 3.7-8.24 8.24-8.24m4.54 11.66c-.25.7-.99 1.29-1.74 1.45-.51.11-1.18.2-3.41-.73-2.85-1.18-4.69-4.08-4.83-4.27-.14-.19-1.16-1.54-1.16-2.93 0-1.39.73-2.08 1-2.36.26-.28.58-.35.77-.35.19 0 .39 0 .56.01.18.01.42-.07.66.5.25.59.85 2.08.93 2.23.08.16.13.34.03.54-.1.2-.15.33-.3.51-.15.18-.32.4-.46.54-.15.15-.31.32-.13.62.18.3 1.05 1.73 2.25 2.8 1.54 1.37 2.85 1.79 3.25 1.99.41.2.65.17.89-.11.24-.28 1.03-1.2 1.3-1.62.28-.41.55-.35.93-.2.38.15 2.42 1.14 2.83 1.35.41.2.69.3.79.47.1.18.1.99-.15 1.69Z"/></svg>
+    </a>
+  </div>
+
+  <!-- Script JS -->
+  <script src="script.js"></script>
+</body>
+</html>
