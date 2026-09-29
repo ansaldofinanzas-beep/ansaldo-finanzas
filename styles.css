@@ -159,7 +159,32 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.25rem;
 }
 
-/* Simulator Box */
+/* Simulator Box & Tabs */
+.simulator-tab-btn {
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: var(--transition-smooth);
+  color: #94a3b8;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(51, 65, 85, 0.8);
+  cursor: pointer;
+}
+
+.simulator-tab-btn:hover {
+  color: #ffffff;
+  background: rgba(30, 41, 59, 0.8);
+}
+
+.simulator-tab-btn.active {
+  background: #10b981;
+  color: #022c22;
+  border-color: #10b981;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3);
+}
+
 .simulator-box {
   background: linear-gradient(145deg, #0b192c 0%, #172a45 100%);
   color: #ffffff;
@@ -203,6 +228,23 @@ input[type="range"]::-webkit-slider-thumb {
 
 input[type="range"]::-webkit-slider-thumb:hover {
   transform: scale(1.15);
+}
+
+/* Metric Progress Bar in Simulator */
+.progress-track {
+  width: 100%;
+  height: 12px;
+  background: #334155;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill-safe {
+  height: 100%;
+  background: linear-gradient(90deg, #10b981, #059669);
+  border-radius: 6px;
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* FAQ Accordion */
