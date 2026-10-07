@@ -1,5 +1,5 @@
 /**
- * Cristian Ansaldo - CFO Externo & Finanzas PyME
+ * C&A FINANZAS CORPORATIVAS - Dirección Financiera & CFO Externo para PyMEs
  * Interactive Scripts: Navigation, Simulator de Costos y Márgenes, FAQ, Contact & WhatsApp
  */
 
