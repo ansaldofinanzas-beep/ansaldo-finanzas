@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `En mi empresa estimamos una facturación de ${formatCurrency(ventas)} y costos fijos de ${formatCurrency(costosFijos)}, con un Punto de Equilibrio de ${formatCurrency(breakEven)}. ` +
         `Me interesa coordinar un diagnóstico para auditar nuestra estructura de costos y márgenes.`
       );
-      peCtaBtn.href = `https://wa.me/5491157720869?text=${msg}`;
+      peCtaBtn.href = `https://wa.me/5491125598554?text=${msg}`;
     }
   }
 
@@ -254,7 +254,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `Al simular un descuento del ${(discountPct * 100).toFixed(0)}% en mis precios de lista, la ganancia marginal cae un ${Math.abs(caidaCMgPct).toFixed(1)}% exigiendo vender un +${volumenExtraPct.toFixed(1)}% más de unidades para compensar. ` +
         `Quisiera consultar para optimizar la política de precios y rentabilidad de mi empresa.`
       );
-      descCtaBtn.href = `https://wa.me/5491157720869?text=${msg}`;
+      descCtaBtn.href = `https://wa.me/5491125598554?text=${msg}`;
     }
   }
 
@@ -314,7 +314,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `Para cubrir costos fijos y erogaciones de caja (préstamos, retiros e inversiones) necesitamos facturar ${formatCurrency(peFinanciero)} al mes. ` +
         `Quisiera coordinar una reunión de diagnóstico para planificar nuestro Cash Flow.`
       );
-      peFinCtaBtn.href = `https://wa.me/5491157720869?text=${msg}`;
+      peFinCtaBtn.href = `https://wa.me/5491125598554?text=${msg}`;
     }
   }
 
@@ -380,7 +380,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       // 2. Open WhatsApp directly
-      const waUrl = `https://wa.me/5491157720869?text=${waMessage}`;
+      const waUrl = `https://wa.me/5491125598554?text=${waMessage}`;
       window.open(waUrl, '_blank');
 
       // 3. Reset form and show success confirmation
